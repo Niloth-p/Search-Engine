@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module runner</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>runner</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:z%3A%5Cassignment1%5Cprograms%5Ctesting2%5Crunner.py">z:\assignment1\programs\testing2\runner.py</a></font></td></tr></table>
+    <p><tt>Takes&nbsp;the&nbsp;queries&nbsp;and&nbsp;returns&nbsp;the&nbsp;top&nbsp;10&nbsp;ranked&nbsp;documents</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cleanqueries"><strong>cleanqueries</strong></a>(porter, sw)</dt><dd><tt>Cleans&nbsp;the&nbsp;queries'&nbsp;tokens</tt></dd></dl>
+ <dl><dt><a name="-computeIDF"><strong>computeIDF</strong></a>(query, idf)</dt><dd><tt>Computes&nbsp;the&nbsp;idf&nbsp;score&nbsp;of&nbsp;each&nbsp;query&nbsp;term</tt></dd></dl>
+ <dl><dt><a name="-computePR"><strong>computePR</strong></a>(count, retrieved)</dt><dd><tt>Computes&nbsp;the&nbsp;precision&nbsp;and&nbsp;recall</tt></dd></dl>
+ <dl><dt><a name="-computeTF"><strong>computeTF</strong></a>(query, docID, tf, count)</dt><dd><tt>Computes&nbsp;the&nbsp;tf&nbsp;score</tt></dd></dl>
+ <dl><dt><a name="-computescores"><strong>computescores</strong></a>(queries)</dt><dd><tt>Computes&nbsp;the&nbsp;tf&nbsp;and&nbsp;idf&nbsp;scores&nbsp;for&nbsp;all&nbsp;the&nbsp;docs,<br>
+and&nbsp;writes&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;scores:&nbsp;docID&nbsp;-&gt;&nbsp;score,<br>
+to&nbsp;a&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-getDocNames"><strong>getDocNames</strong></a>(docIDs)</dt><dd><tt>Retrieves&nbsp;the&nbsp;docnames&nbsp;from&nbsp;the&nbsp;docIDs</tt></dd></dl>
+ <dl><dt><a name="-getStopwords"><strong>getStopwords</strong></a>(stopwordsFile)</dt><dd><tt>Gets&nbsp;the&nbsp;stopwords</tt></dd></dl>
+ <dl><dt><a name="-loader"><strong>loader</strong></a>(index)</dt><dd><tt>Loads&nbsp;the&nbsp;object&nbsp;written&nbsp;to&nbsp;a&nbsp;file,<br>
+using&nbsp;the&nbsp;pickle&nbsp;module</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>main&nbsp;function</tt></dd></dl>
+ <dl><dt><a name="-ranking"><strong>ranking</strong></a>(scores)</dt><dd><tt>ranks&nbsp;the&nbsp;docIDs&nbsp;based&nbsp;on&nbsp;their&nbsp;tf-idf&nbsp;scores</tt></dd></dl>
+ <dl><dt><a name="-writeToFile"><strong>writeToFile</strong></a>(filename, index)</dt><dd><tt>Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;a&nbsp;file,<br>
+using&nbsp;the&nbsp;pickle&nbsp;module</tt></dd></dl>
+ <dl><dt><a name="-writeToHumanReadableFile"><strong>writeToHumanReadableFile</strong></a>(filename, index)</dt><dd><tt>Writes&nbsp;an&nbsp;object&nbsp;to&nbsp;a&nbsp;file,<br>
+by&nbsp;formatting&nbsp;it&nbsp;into&nbsp;a&nbsp;readable&nbsp;format</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>N</strong> = 6043<br>
+<strong>direc</strong> = r'Z:\Assignment1\Programs\ExtractedText'</td></tr></table>
+</body></html>

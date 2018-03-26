@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Indexer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Indexer</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:z%3A%5Cassignment1%5Cprograms%5Ctesting2%5Cindexer.py">z:\assignment1\programs\testing2\indexer.py</a></font></td></tr></table>
+    <p><tt>Traverses&nbsp;through&nbsp;the&nbsp;docs&nbsp;in&nbsp;a&nbsp;directory,<br>
+creating&nbsp;the&nbsp;idf&nbsp;and&nbsp;the&nbsp;tf&nbsp;tables,<br>
+and&nbsp;writes&nbsp;them&nbsp;to&nbsp;files</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-addTotf"><strong>addTotf</strong></a>(tf, TFhelper, docID)</dt><dd><tt>Adds&nbsp;tokens&nbsp;of&nbsp;each&nbsp;doc&nbsp;to&nbsp;the&nbsp;tf&nbsp;table</tt></dd></dl>
+ <dl><dt><a name="-cleantokensofeachdoc"><strong>cleantokensofeachdoc</strong></a>(tf, porter, tokensindoc, sw, docID)</dt><dd><tt>Cleans&nbsp;a&nbsp;list&nbsp;of&nbsp;tokens&nbsp;-&nbsp;stemming,&nbsp;removing&nbsp;repetition,<br>
+and&nbsp;adds&nbsp;the&nbsp;cleaned&nbsp;tokens&nbsp;to&nbsp;the&nbsp;tf&nbsp;table</tt></dd></dl>
+ <dl><dt><a name="-createIDF"><strong>createIDF</strong></a>(postingslist)</dt><dd><tt>Creates&nbsp;the&nbsp;idf&nbsp;table&nbsp;from&nbsp;the&nbsp;postingslist</tt></dd></dl>
+ <dl><dt><a name="-getStopwords"><strong>getStopwords</strong></a>(stopwordsFile)</dt><dd><tt>get&nbsp;stopwords&nbsp;from&nbsp;the&nbsp;stopwords&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-insertinpostingslist"><strong>insertinpostingslist</strong></a>(tokensindoc, docID, postingslist)</dt><dd><tt>Inserts&nbsp;all&nbsp;the&nbsp;given&nbsp;tokens&nbsp;of&nbsp;each&nbsp;doc&nbsp;into&nbsp;the&nbsp;postings&nbsp;list,<br>
+in&nbsp;a&nbsp;suitable&nbsp;format,&nbsp;for&nbsp;later&nbsp;retrieval</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>main&nbsp;function,&nbsp;calls&nbsp;other&nbsp;functions</tt></dd></dl>
+ <dl><dt><a name="-tokenizedoc"><strong>tokenizedoc</strong></a>(tf, porter, current_file, sw, docID)</dt><dd><tt>Returns&nbsp;all&nbsp;the&nbsp;cleaned&nbsp;tokens&nbsp;within&nbsp;the&nbsp;given&nbsp;doc</tt></dd></dl>
+ <dl><dt><a name="-traversethroughdocs"><strong>traversethroughdocs</strong></a>(tf, porter, sw, postingslist)</dt><dd><tt>Traverses&nbsp;through&nbsp;all&nbsp;the&nbsp;docs&nbsp;in&nbsp;the&nbsp;directory&nbsp;indexing&nbsp;them</tt></dd></dl>
+ <dl><dt><a name="-writeToFile"><strong>writeToFile</strong></a>(filename, index)</dt><dd><tt>Writes&nbsp;the&nbsp;given&nbsp;index&nbsp;to&nbsp;a&nbsp;file,&nbsp;as&nbsp;an&nbsp;object,<br>
+using&nbsp;the&nbsp;pickle&nbsp;module</tt></dd></dl>
+ <dl><dt><a name="-writeToHumanReadableFile"><strong>writeToHumanReadableFile</strong></a>(filename, index)</dt><dd><tt>Writes&nbsp;the&nbsp;given&nbsp;index&nbsp;to&nbsp;a&nbsp;file,<br>
+in&nbsp;a&nbsp;suitable&nbsp;format&nbsp;for&nbsp;human&nbsp;reference,<br>
+unlike&nbsp;an&nbsp;object&nbsp;which&nbsp;cannot&nbsp;be&nbsp;read</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>direc</strong> = r'Z:\Assignment1\Programs\ExtractedText'</td></tr></table>
+</body></html>
