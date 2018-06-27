@@ -6,9 +6,7 @@ import time
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 
-#direc = r"Z:\Assignment1\Programs\ExtractedText"
-#direc = "C:\\Users\\1000255272\\Desktop\\P2\\TestQueues"
-direc = "C:\\TLALogs\\TestQueues"
+direc = r"Z:\Assignment1\Programs\ExtractedText"
 
 def getStopwords(stopwordsFile):
     '''get stopwords from the stopwords file'''
