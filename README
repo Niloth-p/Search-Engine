@@ -1,4 +1,7 @@
-Implementation of a text based information retrieval system - a domain specific search engine. The searching module is built according to the Vector Space model of Information Retrieval. The program builds the index of all the files, then retrieves the top 10 documents (if any) relevant to queries input by user. This program performs ranked retrieval using the tf-idf scoring model.
+Implementation of a text based information retrieval system - a domain specific search engine. 
+The searching module is built according to the Vector Space model of Information Retrieval. 
+The program builds the index of all the files, then retrieves the top 10 documents (if any) relevant to queries input by user. 
+This program performs ranked retrieval using the tf-idf scoring model.
 
 
 Command to extract .txt files from all the .html files in the corpus:
